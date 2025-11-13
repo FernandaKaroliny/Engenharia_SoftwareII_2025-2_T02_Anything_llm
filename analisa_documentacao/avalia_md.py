@@ -10,7 +10,7 @@ import subprocess
 # CONFIGURAÇÕES
 # =========================
 
-CAMINHO_REPO = "anything-llm/server/storage"  # Substitua pelo caminho do repositório
+CAMINHO_REPO = "anything-llm"  # Substitua pelo caminho do repositório
 LIMITE_CARACTERES = 3000  # Limite máximo por análise
 ARQUIVO_SAIDA = "avalia_md.json"
 ARQUIVO_SAIDA_TXT = "avalia_md.txt"
