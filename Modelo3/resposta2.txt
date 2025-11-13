@@ -1,0 +1,51 @@
+
+Analise o seguinte arquivo package.json:
+{
+  "name": "anything-llm",
+  "version": "1.9.0",
+  "description": "The best solution for turning private documents into a chat bot using off-the-shelf tools and commercially viable AI technologies.",
+  "main": "index.js",
+  "type": "module",
+  "author": "Timothy Carambat (Mintplex Labs)",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "jest",
+    "lint": "cd server && yarn lint && cd../frontend && yarn lint && cd../collector && yarn lint",
+    "setup": "cd server && yarn && cd../collector && yarn && cd../frontend && yarn && cd.. && yarn setup:envs && yarn prisma:setup && echo \"Please run yarn dev:server, yarn dev:collector, and yarn dev:frontend in separate terminal tabs.\"",
+    "setup:envs": "cp -n./frontend/.env.example./frontend/.env && cp -n./server/.env.example./server/.env.development && cp -n./collector/.env.example./collector/.env && cp -n./docker/.env.example./docker/.env && echo \"All ENV files copied!\n\"",
+    "dev:server": "cd server && yarn dev",
+    "dev:collector": "cd collector && yarn dev",
+    "dev:frontend": "cd frontend && yarn dev",
+    "dev:all": "npx concurrently \"yarn dev:server\" \"yarn dev:frontend\" \"yarn dev:collector\"",
+    "prisma:generate": "cd server && npx prisma generate",
+    "prisma:migrate": "cd server && npx prisma migrate dev --name init",
+    "prisma:seed": "cd server && npx prisma db seed",
+    "prisma:setup": "yarn prisma:generate && yarn prisma:migrate && yarn prisma:seed",
+    "prisma:reset": "truncate -s 0 server/storage/anythingllm.db && yarn prisma:migrate",
+    "prod:server": "cd server && yarn start",
+    "prod:frontend": "cd frontend && yarn build",
+    "generate:cloudformation": "node cloud-deployments/aws/cloudformation/generate.mjs",
+    "generate::gcp_deployment": "node cloud-deployments/gcp/deployment/generate.mjs",
+    "verify:translations": "cd frontend/src/locales && node verifyTranslations.mjs",
+    "normalize:translations": "cd frontend/src/locales && node normalizeEn.mjs && cd../../.. && yarn lint && yarn verify:translations"
+  },
+  "private": false,
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "jest": "^29.7.0"
+  }
+}
+Com base nas dependências, scripts e estrutura, descreva:
+1. Quais tecnologias principais o projeto utiliza (ex: Node.js, React, Express, Prisma, etc.).
+2. Qual o tipo de arquitetura que o projeto segue (ex: Monolítico, MVC, Microservices, Event-Driven, Client-Server, etc.).
+3. Quais diretórios ou pacotes indicam separação de responsabilidades (ex:'server', 'frontend', 'collector').
+4. Como ocorre o fluxo de execução em desenvolvimento (baseando-se nos scripts `dev:*` e `setup`).
+5. Se o projeto parece voltado para execução local, em nuvem, ou ambos.
+6. Quais boas práticas ou convenções de arquitetura são evidentes (ex: uso de Prisma para ORM, divisão entre back e front, uso de Docker, etc.).
+7. Gere um pequeno resumo final explicando o propósito geral do projeto e seu padrão arquitetural principal.
+
+Responda em português de forma clara, objetiva e Avalie a confiabilidade da sua resposta e a probabilidade de estar correta.
+-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1
