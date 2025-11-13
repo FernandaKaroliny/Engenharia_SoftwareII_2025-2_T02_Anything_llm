@@ -1,8 +1,10 @@
 
-Analise a estrutura de pastas a partir da delimitação do bloco de pastas abaixo e determine qual ou quais padrões arquiteturais o projeto segue.
+
+      Analise a estrutura de pastas a partir da delimitação do bloco de pastas abaixo e determine qual ou quais padrões arquiteturais o projeto segue.
 
 **Estrutura de pastas do repositório:** 
 -> Inicio do bloco de pastas
+
 .devcontainer
 .github
 .github/ISSUE_TEMPLATE
@@ -595,15 +597,23 @@ server/utils/vectorDbProviders/qdrant
 server/utils/vectorDbProviders/weaviate
 server/utils/vectorDbProviders/zilliz
 server/utils/vectorStore
--> Fim do bloco de pastas
-Com base nas dependências, scripts e estrutura, descreva:
-1. Quais tecnologias principais o projeto utiliza (ex: Node.js, React, Express, Prisma, etc.).
-2. Qual o tipo de arquitetura que o projeto segue (ex: Monolítico, MVC, Microservices, Event-Driven, Client-Server, etc.).
-3. Quais diretórios ou pacotes indicam separação de responsabilidades (ex:'server', 'frontend', 'collector').
-4. Como ocorre o fluxo de execução em desenvolvimento (baseando-se nos scripts `dev:*` e `setup`).
-5. Se o projeto parece voltado para execução local, em nuvem, ou ambos.
-6. Quais boas práticas ou convenções de arquitetura são evidentes (ex: uso de Prisma para ORM, divisão entre back e front, uso de Docker, etc.).
-7. Gere um pequeno resumo final explicando o propósito geral do projeto e seu padrão arquitetural principal.
 
-Responda em português de forma clara, objetiva e Avalie a confiabilidade da sua resposta e a probabilidade de estar correta.
-- 1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-
+-> Fim do bloco de pastas
+
+      Com base nas dependências, scripts e estrutura, descreva:
+      1. Quais tecnologias principais o projeto utiliza (ex: Node.js, React, Express, Prisma, etc.).
+      2. Qual o tipo de arquitetura que o projeto segue (ex: Monolítico, MVC, Microservices, Event-Driven, Client-Server, etc.).
+      3. Quais diretórios ou pacotes indicam separação de responsabilidades (ex:'server', 'frontend', 'collector').
+      4. Como ocorre o fluxo de execução em desenvolvimento (baseando-se nos scripts `dev:*` e `setup`).
+      5. Se o projeto parece voltado para execução local, em nuvem, ou ambos.
+      6. Quais boas práticas ou convenções de arquitetura são evidentes (ex: uso de Prisma para ORM, divisão entre back e front, uso de Docker, etc.).
+      7. Gere um pequeno resumo final explicando o propósito geral do projeto e seu padrão arquitetural principal.
+
+      Responda em português de forma clara OBJETIVA, não repetitiva além de Avaliar a confiabilidade da sua resposta.
+       - Tecnologias principais: Node.js, Express, Prisma, React, Docker, Prisma.
+       - Arquitetura: Monolítico.
+       - Diretórios de separação de responsabilidades:'server', 'frontend', 'collector'.
+       - Fluxo de execução em desenvolvimento: baseado nos scripts `dev:*` e `setup`.
+       - Desenvolvimento local, nuvem ou ambos.
+       - Práticas arquiteturais: uso de Prisma para ORM, divisão entre back e front, uso de Docker.
+       - Resumo final: O projeto é uma aplicação de chatbot que utiliza Node.js, Express, Prisma, React e Docker para desenvolvimento em nuvem. Ele segue um arquitetura monolítica e é projetado para ser executado em ambientes locais ou em nuvem. O projeto é uma aplicação de chatbot que utiliza Prisma para gerenciar a base de dados e React para a interface de usuário. Ele é projetado para ser executado em ambientes locais ou em nuvem.
