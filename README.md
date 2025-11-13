@@ -1,7 +1,5 @@
 # Engenharia_SoftwareII_2025-2_T02_Anything_llm
 
-# Análise de Padrões Arquiteturais - AnythingLLM
-
 ## 📋 Sobre o Projeto
 Este repositório destina-se a conter os dados necessários para a análise de padrões arquiteturais do repositório AnythingLLM utilizando modelos do Hugging Face para identificação de padrões e estruturas de software.
 
