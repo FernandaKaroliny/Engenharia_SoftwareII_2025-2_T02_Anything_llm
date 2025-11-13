@@ -1,0 +1,138 @@
+=== RESULTADOS DA CLASSIFICAÇÃO DE PADRÕES ARQUITETURAIS ===
+
+Arquivo: CONTRIBUTING.md
+Padrão Arquitetural: Shared-Data (components communicate indirectly through shared data repositories or databases)
+Confiança: 19.60%
+Resumo: If you encounter a bug or have a feature request, please open an issue on theGitHub issue tracker. If you are looking for something towork on, check the good first issue label. Integrations (LLM, Vector DB, etc.) are reviewed at our discretion. We value every contribution, but we also value the quality of the code and the user experience we envision for the project. We would rather answer a comment on an issue than close a PR after you've spent time on it. Your time is valuable and we appreciate your time and effort to make AnythingLLM better. We will do our best to review and merge your PRs, but please be patient. It is our responsibility to make sure that the changes are working as expected and are of high quality. The AnythingLLM project is written in Node.js. There are additional sub-repositories for the embed widget and browser extension. These are not part of the core AnythingLLm project, but are maintained by the AnythingllM team. Changes to the core project are released through the `master' branch. Changes for the desktop app are downstream of the main AnythingLL m project. Changes are published at the same time as the core anythingllm project. By contributing to this repository, you agree to license your contributions under the MIT license.. .## Configuring GitFirst, fork the repository on GitHub, then clone your fork:Then add the main repository as a remote:
+------------------------------------------------------------
+Arquivo: README.md
+Padrão Arquitetural: Shared-Data (components communicate indirectly through shared data repositories or databases)
+Confiança: 30.30%
+Resumo: AnythingLLM is a full-stack application that enables you to turn any document, resource, or piece of content into context that any LLM can use as a reference during chatting. It divides your documents into objects called `workspaces' Workspaces can share documents, but they do not talk to each other so you can keep your context for each workspace clean. 100% Cloud deployment ready. Works with all popular closed and open-source LLM providers. Built-in cost & time-saving measures for managing very large documents compared to any other chat UI. Full Developer API for custom integrations. This monorepo consists of six main sections. `frontend': A viteJS + React frontend that you can run to easily create and manage all your content the LLM can use. ‘server’: A NodeJS express server to handle all the interactions and do all the vectorDB management and LLM interactions. External Apps & Integrations: These are apps that are not maintained by Mintplex Labs, but are compatible with AnythingLLM. A listing here is not an endorsement. Self-Hosting: There are a number of deployment methods, scripts, and templates you can use to run anythingLLM locally. Refer to the table below to read how to deploy. AnythingLLM contains a telemetry feature that collects anonymous usage information. We use this information to help us understand how AnythingLLM is used. It also helps us prioritize work on new features and bug fixes. Opt out by setting ` DISABLE_TELEMETRY` in your server or docker .env settings to "true" You can also do this in-app by going to the sidebar > `Privacy` and disabling telemetry. The anonymous data is never shared with third parties, ever. The Telemetry provider is PostHog - an open-source telemetry collection service. All Sponsors: DCS DIGITAL. premium-sponsors (reserved for $100/mth sponsors who request to be called out here and/or are non-private sponsors) All Sponsors include: Dennis, Michael Hamilton, Ph.D, and Predrag Stojadinovic. This project is MIT licensed. The OpenAI Assistant Swarm turns your entire library of OpenAI assistants into one single army commanded from a single agent. The Swarm is a free, open-source, cross-platform, cloud-based tool that can be used by anyone with an internet connection. It can be downloaded from: http://www.mintplex Labs.com/swarm-swarm.
+------------------------------------------------------------
+Arquivo: BARE_METAL.md
+Padrão Arquitetural: Shared-Data (components communicate indirectly through shared data repositories or databases)
+Confiança: 19.90%
+Resumo: WARNING: This method of deployment is **not supported** by the core-team and is to be used as a reference for your deployment. You are fully responsible for securing your deployment and data in this mode. You should aim for at least 2GB of RAM. Disk storage is proportional to however much data you will be storing (documents, vectors, models, etc). Minimum 10GB recommended.- NodeJS v18- Yarn## Getting started1. Clone the repo into your server as the user who the application will run as.2. `cd anything-llm` and run `yarn setup`. This will install all dependencies to run in production as well as debug the application. Chats for streaming require **websocket** connections. You need to ensure that the Nginx configuration is set up to support websockets.
+------------------------------------------------------------
+Arquivo: pull_request_template.md
+Padrão Arquitetural: Shared-Data (components communicate indirectly through shared data repositories or databases)
+Confiança: 24.80%
+Resumo: Use "resolves #xxx" to auto resolve on merge. For change type, change [ ] to [x]. Describe the changes in this PR that are impactful to the repo. Add any other context about the Pull Request.
+------------------------------------------------------------
+Arquivo: SECURITY.md
+Padrão Arquitetural: Shared-Data (components communicate indirectly through shared data repositories or databases)
+Confiança: 24.40%
+Resumo: Use this section to tell people about which versions of your project arecurrently being supported with security updates. If a security concern is found you can create a PR for it.
+------------------------------------------------------------
+Arquivo: HOW_TO_USE_DOCKER.md
+Padrão Arquitetural: Shared-Data (components communicate indirectly through shared data repositories or databases)
+Confiança: 17.40%
+Resumo: Use the Dockerized version of AnythingLLM for a much faster and complete startup. Requires Docker v18.03+ on Win/Mac and 20.10+ on Linux/Ubuntu for host.internal to resolve. Mount the storage volume to a folder on your host machine. Pull in the latest image from docker. Supports both `amd64` and `arm64` CPU architectures. Integrations and one-click setups. The integrations below are templates or tooling built by the community to make running the docker experience of Anything LLM easier. Use the tooling below to help you get started with AnythingLLm. Follow the setup found on Midori AI Subsystem Site for your host OS. install the AnythingLLM docker backend to the MidoriAI Subsystem.Once that is done, you are all set!## Common questions and fixes. Cannot connect to service running on localhost! If you are in docker and cannot connect to a service. running on your host machine running on a local interface or. loopback, use ` instead.
+------------------------------------------------------------
+Arquivo: PINECONE_SETUP.md
+Padrão Arquitetural: Shared-Data (components communicate indirectly through shared data repositories or databases)
+Confiança: 51.60%
+Resumo: How to setup Pinecone Vector Database for AnythingLLMOfficial Pinecone Docs for reference.
+------------------------------------------------------------
+Arquivo: SETUP.md
+Padrão Arquitetural: Shared-Data (components communicate indirectly through shared data repositories or databases)
+Confiança: 49.50%
+Resumo: Set up PG vector for anythingllm to use as your vector database is quite easy. At a minimum, you will need the following:- Postgresql v12+- `pg vector` extension installed on DB- User with DB table creation perms and READ access. If you are running AnythingLLM in Docker, you'll need to ensure that the DB is accessible from the container. You can use the "Reset Vector Database" button in the AnythingllM UI to reset your vector Database. This will drop all vectors within that workspace, but the table will remain in the DB. The default embedding model is 384 dimensions. However, if you are using a custom embedder, you need to set the dimension value is set correctly. If you are using the PGVector as your vector database, you may encounter an error similar to the following when embedding documents. This is due to the fact that the ` vector` type is not installed on the PG database. You will need to create the extension on the database. This can be done by running the following command:.reset the vector database at the db level_
+------------------------------------------------------------
+Arquivo: MILVUS_SETUP.md
+Padrão Arquitetural: Shared-Data (components communicate indirectly through shared data repositories or databases)
+Confiança: 55.00%
+Resumo: How to setup a local (or remote) Milvus Vector Database. How to set up a cluster on your cloud account. Set .env.development variable in server.
+------------------------------------------------------------
+Arquivo: QDRANT_SETUP.md
+Padrão Arquitetural: Shared-Data (components communicate indirectly through shared data repositories or databases)
+Confiança: 53.60%
+Resumo: How to setup a local (or cloud) QDrant Vector Database. Get a Qdrant Cloud instance.Set up QDrants locally on Docker.
+------------------------------------------------------------
+Arquivo: CHROMA_SETUP.md
+Padrão Arquitetural: Shared-Data (components communicate indirectly through shared data repositories or databases)
+Confiança: 62.00%
+Resumo: Chroma Vector Database. How to setup a local (or remote) Chroma Vector DatabaseOfficial Chroma Docs for reference.
+------------------------------------------------------------
+Arquivo: WEAVIATE_SETUP.md
+Padrão Arquitetural: Shared-Data (components communicate indirectly through shared data repositories or databases)
+Confiança: 53.60%
+Resumo: How to setup a local (or cloud) Weaviate Vector Database. How to get started in development mode only.
+------------------------------------------------------------
+Arquivo: ASTRA_SETUP.md
+Padrão Arquitetural: Shared-Data (components communicate indirectly through shared data repositories or databases)
+Confiança: 61.30%
+Resumo: How to setup Astra Vector Database for AnythingLLMOfficial Astra DB Docs for reference.
+------------------------------------------------------------
+Arquivo: README.md
+Padrão Arquitetural: Shared-Data (components communicate indirectly through shared data repositories or databases)
+Confiança: 18.00%
+Resumo: If you encounter an error stating `llama:streaming - could not stream chat. Error: connect ECONNREFUSED 172.17.0.1:11434` when using AnythingLLM in a Docker container, this indicates that the IP of the Host inside of the virtual docker network does not bind to port 11434 of the host system by default. To resolve this issue and ensure proper communication, you must configure Ollama to bind to a specific IP address.
+------------------------------------------------------------
+Arquivo: PRISMA.md
+Padrão Arquitetural: Shared-Data (components communicate indirectly through shared data repositories or databases)
+Confiança: 29.80%
+Resumo: Prisma is a powerful ORM for Node.js and TypeScript. Follow the guide to understand how to use Prisma and the scripts available in the project to manage the Prisma setup. Prisma Scripts: Generate client, run migrations, and seed the database. Manual Prisma commands: introspect, migrate, reset, delete, and recreate the database's schemas. For users transitioning from the old SQLite ORM, run the `sqlite:migrate` script to smoothly transition to Prisma. If you're a new user, your setup will already be using Prisma, so don't worry about this step.
+------------------------------------------------------------
+Arquivo: README.md
+Padrão Arquitetural: Shared-Data (components communicate indirectly through shared data repositories or databases)
+Confiança: 55.70%
+Resumo: This folder is for the local or disk storage of ready-to-embed documents, vector-cached embeddings, and the disk-storage of LanceDB and the local SQLite database. This folder should contain the following folders.`documents `lancedb` (if using lancedb)` vector-cache` and a file named exactly `anythingllm.db`
+------------------------------------------------------------
+Arquivo: README.md
+Padrão Arquitetural: Shared-Data (components communicate indirectly through shared data repositories or databases)
+Confiança: 32.10%
+Resumo: AnythingLLM allows you to upload various audio and video formats as source documents. In all cases the audio tracks will be transcribed by a locally running ONNX model **whisper-small** built by Xenova on HuggingFace.co. The model is a smaller version of the OpenAI Whisper model. Given the model runs locally on CPU, larger files will result in longer transcription times. Once transcribed you can embed these transcriptions into your workspace like you would any other file. If running in Docker you should be running the container to a mounted storage location on the host machine so you can update the storage files directly.
+------------------------------------------------------------
+Arquivo: DOCUMENTS.md
+Padrão Arquitetural: Shared-Data (components communicate indirectly through shared data repositories or databases)
+Confiança: 38.00%
+Resumo: This is a temporary cache of the resulting files you have collected from `collector/`. You really should not be adding files manually to this folder. All files should be JSON files and in general there is only one main required key: `pageContent'
+------------------------------------------------------------
+Arquivo: __HOTDIR__.md
+Padrão Arquitetural: Shared-Data (components communicate indirectly through shared data repositories or databases)
+Confiança: 40.20%
+Resumo: This is a pre-set file location that documents will be written to when uploaded by AnythingLLM. There is really no need to touch it.
+------------------------------------------------------------
+Arquivo: README.md
+Padrão Arquitetural: Shared-Data (components communicate indirectly through shared data repositories or databases)
+Confiança: 17.70%
+Resumo: The AnythingLLM development container is designed to create a seamless and feature-rich development environment for this project. It is built on Node.JS LTS v18 and includes Docker, Visual Studio Code, and Remote Containers. It can be set up using GitHub, VSCode (Release or Insiders) or using your local machine using VSCODE tools. It will automatically run `yarn setup` to ensure everything is in place for the Collector, Server and Frontend when it is built for the first time. There are no AI-powered extensions and time trackers for now to avoid any privacy concerns, but you can install them later in your own environment. Make sure the built-in extension is active (I don't know why it would not be, but just in case). If you want, you can install the nightly version (ms-vscode.js- debug-nightly) Then, in the "Run and Debug" tab (Ctrl+shift+D), you can select on the menu:- Collector debug. This will start the collector in debug mode and attach the debugger. Works very well.- Server debug. The server will be run in a debug mode with the debugger attached. You will basically need to run the `dev:collector` and the 'dev:frontend' in this order. When the frontend finishes starting, a window browser will open **inside** the VSCode. The best scenario would be always to use the embedded browser. Another two configurations launch Chrome and Edge, and I think we could add breakpoints on .jsx files somehow.
+------------------------------------------------------------
+Arquivo: DEPLOY.md
+Padrão Arquitetural: Shared-Data (components communicate indirectly through shared data repositories or databases)
+Confiança: 17.20%
+Resumo: With an AWS account you can easily deploy a private AnythingLLM instance on AWS. This will create aurl that you can access from any browser over HTTP (HTTPS not supported) This single instance will run on your own keys and they will not be exposed. If you want your instance to be protected it is highly recommend that you set a password once setup is complete. See **Note** below on how to visualize this process.
+------------------------------------------------------------
+Arquivo: aws_https_instructions.md
+Padrão Arquitetural: Shared-Data (components communicate indirectly through shared data repositories or databases)
+Confiança: 20.90%
+Resumo: Instructions for manual configuration after generating and running the aws cloudformation template (aws_build_from_source_no_credentials) Tested on following browsers: Firefox version 119, Chrome version 118, Edge 118. Successful deployment of Amazon Linux 2023 EC2 instance with Docker container running Anything LLM- Admin priv to configure Elastic IP for EC2 instances via AWS Management Console UI- Admin Priv to configure DNS services (i.e. AWS Route 53) via AWS management console UI.- Adminpriv to configure EC2 Security Group rules via Amazon Management Console. UI. How to Configure HTTPS for AnythingLLM AWS private deployment. These instructions are for CLI configuration and assume you are logged in to EC2 instance as the ec2-user. Accept the terms of service. Accept or decline to receive communication from LetsEncrypt. Follow AWS instructions on deleting inbound rule for EC2 security group.
+------------------------------------------------------------
+Arquivo: README.md
+Padrão Arquitetural: Shared-Data (components communicate indirectly through shared data repositories or databases)
+Confiança: 25.10%
+Resumo: This chart exposes application configuration via two mechanisms. Use Kubernetes `Secret` objects and reference them from `env` (with `valueFrom.secretKeyRef`) or `envFrom. secretRef` The chart creates (or mounts) a `PersistentVolumeClaim` using the `persistentVolume.*` settings. For production, provide resource `requests` and `limits` in `values.yaml` to prevent scheduler starvation and to control cost. anythingllm AnythingLLM is an all-in-one Desktop & Docker AI application with built-in RAG, AI agents, No-code agent builder, MCP compatibility, and more.  .NODE_ENV | string | `"production"` | || config.STORAGE_DIR | string -- `"/storage"' | && config.UID | string = `"1000"` -- || env | object | `{}` | && envFrom | object -- `{]` | | fullnameOverride | string  -- '"mintplexlabs/anythingllm"' -- 'imagePullSecrets' | 'image.pullPolicy' | | image.repository.tag -- '1.9.0' - 'image pullPolicy: 'IfNotPresent'
+------------------------------------------------------------
+Arquivo: DEPLOY.md
+Padrão Arquitetural: Shared-Data (components communicate indirectly through shared data repositories or databases)
+Confiança: 16.70%
+Resumo: With a GCP account you can easily deploy a private AnythingLLM instance on GCP. This will create aurl that you can access from any browser over HTTP (HTTPS not supported) This single instance will run on your own keys and they will not be exposed. If you want your instance to be protected it is highly recommend that you set a password once setup is complete. The output of this cloudformation stack will be:- 1 GCP VM- 1 Security Group with 0.0.0/0 access on Ports 22 & 3001.
+------------------------------------------------------------
+Arquivo: DEPLOY.md
+Padrão Arquitetural: Shared-Data (components communicate indirectly through shared data repositories or databases)
+Confiança: 14.70%
+Resumo: With a DigitalOcean account, you can easily deploy a private AnythingLLM instance using Terraform. This will create a URL that you can access from any browser over HTTP (HTTPS not supported) This single instance will run on your own keys, and they will not be exposed. However, if you want your instance to be protected, it is highly recommended that you set a password once setup is complete. To delete the resources created by Terraform, run the following command in the terminal:`terraform destroy `
+------------------------------------------------------------
+
+=== ESTATÍSTICAS GERAIS ===
+Total de arquivos analisados: 25
+
+Distribuição de padrões detectados:
+ - Shared-Data (components communicate indirectly through shared data repositories or databases): 25 ocorrências (média 34.0%)
+
+=== PADRÃO MAIS PROVÁVEL ===
+Padrão predominante: Shared-Data (components communicate indirectly through shared data repositories or databases)
+Ocorrências: 25
+Confiança média: 34.0%

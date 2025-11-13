@@ -1,0 +1,38 @@
+# Padroes Arquiteturais de Software Identificados
+
+## Padroes Identificados
+
+### Microservices
+Probabilidade Media: 29.9%
+Fontes relacionadas:
+- [FILE] FILE: server/utils/vectorDbProviders/milvus/MILVUS_SETUP.md (38.3%)
+- [COMMIT] COMMIT: 599a3fd8 - Microsoft Foundry Local LLM provider & agent provider (#4435) (34.9%)
+- [FILE] FILE: cloud-deployments/aws/cloudformation/DEPLOY.md (30.1%)
+
+### Component-Based
+Probabilidade Media: 26.2%
+Fontes relacionadas:
+- [FILE] FILE: server/storage/models/README.md (26.9%)
+- [FILE] FILE: cloud-deployments/helm/charts/anythingllm/README.md (25.9%)
+- [COMMIT] COMMIT: c2e7ccc0 - Reimplement Cohere models for basic chat (#4489) (25.8%)
+
+### Event-Driven
+Probabilidade Media: 29.3%
+Fontes relacionadas:
+- [COMMIT] COMMIT: d6f0d305 - Enable real-time agent tool call streaming for all providers (#4279) (34.6%)
+- [COMMIT] COMMIT: 5922349b - feat: Implement CometAPI integration for chat completions and model m… (#4379) (32.1%)
+- [COMMIT] COMMIT: 8cdadd8c - Sync models from remote for FireworksAI (#4475) (25.3%)
+
+### Repository Pattern
+Probabilidade Media: 30.0%
+Fontes relacionadas:
+- [FILE] FILE: pull_request_template.md (30.0%)
+
+# Resumo
+
+Repositorio analisado: anything-llm
+Commits analisados: 100
+Arquivos de texto analisados: 33
+Padroes identificados: 4
+Metodologia: Analise semantica de commits e documentacao utilizando embeddings de texto
+Modelo utilizado: sentence-transformers/all-MiniLM-L6-v2

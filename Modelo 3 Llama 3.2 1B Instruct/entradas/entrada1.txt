@@ -1,3 +1,8 @@
+Analise a estrutura de pastas a partir da delimitação do bloco de pastas abaixo e determine qual ou quais padrões arquiteturais o projeto segue.
+
+**Estrutura de pastas do repositório:** 
+-> Inicio do bloco de pastas
+
 .devcontainer
 .github
 .github/ISSUE_TEMPLATE
@@ -590,3 +595,5 @@ server/utils/vectorDbProviders/qdrant
 server/utils/vectorDbProviders/weaviate
 server/utils/vectorDbProviders/zilliz
 server/utils/vectorStore
+
+-> Fim do bloco de pastas

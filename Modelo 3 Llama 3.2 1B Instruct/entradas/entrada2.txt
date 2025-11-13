@@ -1,3 +1,6 @@
+
+Analise o seguinte arquivo package.json:
+
 {
   "name": "anything-llm",
   "version": "1.9.0",

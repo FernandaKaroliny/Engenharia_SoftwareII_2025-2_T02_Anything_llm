@@ -1,0 +1,50 @@
+
+
+      # Arquivos Selecionados para Análise
+
+## Commits Analisados
+Total: 100 commits
+
+1. 62b4d813 - Update Sponsors README
+2. c2d99b67 - Update Sponsors README
+3. e9db2745 - feat: support northflank deployment (#4570)
+4. c1539754 - Update Sponsors README
+5. 151f97da - Patch agent thoughts UI bug (#4549)
+6. d3619689 - Refactor `loadYouTubeTranscript()` to include YouTube Video Metadata in Content When `parseOnly` is `true` (#4552)
+7. 8c97240f - Refactor `DefaultChatContainer` To Display A Simple Welcome Message  (#4542)
+8. f5f8fb1e - Agent workspace system prompt with variable expansion (#4526)
+9. 985527c3 - fix(server): correct Qdrant batching logic for large uploads (#4545)
+10. 5edc1bea - Add ability to auto-handle YT video URLs in uploader & chat (#4547)
+... e mais 90 commits
+
+## Arquivos de Texto Analisados
+Total: 15 arquivos
+
+1. CONTRIBUTING.md
+2. BARE_METAL.md
+3. README.md
+4. SECURITY.md
+5. pull_request_template.md
+6. server/utils/AiProviders/ollama/README.md
+7. server/utils/AiProviders/perplexity/scripts/chat_models.txt
+8. server/utils/vectorDbProviders/pgvector/SETUP.md
+9. server/utils/vectorDbProviders/astra/ASTRA_SETUP.md
+10. server/utils/vectorDbProviders/qdrant/QDRANT_SETUP.md
+11. server/utils/vectorDbProviders/chroma/CHROMA_SETUP.md
+12. server/utils/vectorDbProviders/milvus/MILVUS_SETUP.md
+13. server/utils/vectorDbProviders/weaviate/WEAVIATE_SETUP.md
+14. server/utils/vectorDbProviders/pinecone/PINECONE_SETUP.md
+15. server/utils/prisma/PRISMA.md
+
+      Com base nas dependências, scripts e estrutura, descreva:
+      1. Quais tecnologias principais o projeto utiliza (ex: Node.js, React, Express, Prisma, etc.).
+      2. Qual o tipo de arquitetura que o projeto segue (ex: Monolítico, MVC, Microservices, Event-Driven, Client-Server, etc.).
+      3. Quais diretórios ou pacotes indicam separação de responsabilidades (ex:'server', 'frontend', 'collector').
+      4. Como ocorre o fluxo de execução em desenvolvimento (baseando-se nos scripts `dev:*` e `setup`).
+      5. Se o projeto parece voltado para execução local, em nuvem, ou ambos.
+      6. Quais boas práticas ou convenções de arquitetura são evidentes (ex: uso de Prisma para ORM, divisão entre back e front, uso de Docker, etc.).
+      7. Gere um pequeno resumo final explicando o propósito geral do projeto e seu padrão arquitetural principal.
+
+      Responda em português de forma clara OBJETIVA, não repetitiva além de Avaliar a confiabilidade da sua resposta.
+       Exemplo: 
+       "O projeto utiliza Node.js, Express e Prisma para arquitetura de microservices, com um foco em segurança e escalabilidade. O diretório'server' é responsável pela implementação da API, enquanto 'frontend' é responsável pela interface de usuário. O fluxo de execução é baseado nos scripts 'dev:*' e'setup'. O projeto utiliza Prisma para ORM e segue uma arquitetura de microservices com divisão entre back e front."
