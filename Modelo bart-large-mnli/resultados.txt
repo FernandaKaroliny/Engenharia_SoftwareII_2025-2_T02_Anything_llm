@@ -1,0 +1,415 @@
+
+Arquivo: anything-llm/eslint.config.js
+- MVC (Model-View-Controller): 0.7601
+- MVVM (Model-View-ViewModel): 0.6705
+- Clean Architecture: 0.6139
+
+Arquivo: anything-llm/server/index.js
+- MVC (Model-View-Controller): 0.9157
+- MVVM (Model-View-ViewModel): 0.8347
+- Clean Architecture: 0.6747
+
+Arquivo: anything-llm/server/prisma/seed.js
+- MVC (Model-View-Controller): 0.9743
+- MVVM (Model-View-ViewModel): 0.6935
+- Clean Architecture: 0.4552
+
+Arquivo: anything-llm/server/models/mobileDevice.js
+- MVC (Model-View-Controller): 0.7506
+- MVVM (Model-View-ViewModel): 0.6134
+- Clean Architecture: 0.3831
+
+Arquivo: anything-llm/server/models/systemPromptVariables.js
+- MVC (Model-View-Controller): 0.9740
+- MVVM (Model-View-ViewModel): 0.9362
+- Clean Architecture: 0.9217
+
+Arquivo: anything-llm/server/models/documents.js
+- MVC (Model-View-Controller): 0.9536
+- MVVM (Model-View-ViewModel): 0.9102
+- Clean Architecture: 0.6199
+
+Arquivo: anything-llm/server/models/systemSettings.js
+- MVC (Model-View-Controller): 0.9537
+- MVVM (Model-View-ViewModel): 0.9022
+- Clean Architecture: 0.8769
+
+Arquivo: anything-llm/server/models/workspaceUsers.js
+- MVC (Model-View-Controller): 0.9516
+- MVVM (Model-View-ViewModel): 0.6741
+- Clean Architecture: 0.6132
+
+Arquivo: anything-llm/server/models/documentSyncQueue.js
+- MVC (Model-View-Controller): 0.9022
+- MVVM (Model-View-ViewModel): 0.6907
+- Clean Architecture: 0.5134
+
+Arquivo: anything-llm/server/models/communityHub.js
+- MVC (Model-View-Controller): 0.9893
+- MVVM (Model-View-ViewModel): 0.9801
+- Clean Architecture: 0.8709
+
+Arquivo: anything-llm/server/models/documentSyncRun.js
+- MVC (Model-View-Controller): 0.5357
+- MVVM (Model-View-ViewModel): 0.3583
+- Clean Architecture: 0.1933
+
+Arquivo: anything-llm/server/models/temporaryAuthToken.js
+- MVC (Model-View-Controller): 0.9296
+- MVVM (Model-View-ViewModel): 0.5806
+- Clean Architecture: 0.3129
+
+Arquivo: anything-llm/server/models/passwordRecovery.js
+- MVC (Model-View-Controller): 0.9173
+- MVVM (Model-View-ViewModel): 0.8209
+- Clean Architecture: 0.4511
+
+Arquivo: anything-llm/server/models/apiKeys.js
+- MVC (Model-View-Controller): 0.9804
+- MVVM (Model-View-ViewModel): 0.8903
+- Clean Architecture: 0.6286
+
+Arquivo: anything-llm/server/models/workspace.js
+- MVC (Model-View-Controller): 0.7881
+- MVVM (Model-View-ViewModel): 0.7393
+- Clean Architecture: 0.4301
+
+Arquivo: anything-llm/server/models/vectors.js
+- MVC (Model-View-Controller): 0.9376
+- MVVM (Model-View-ViewModel): 0.7878
+- Clean Architecture: 0.4914
+
+Arquivo: anything-llm/server/models/welcomeMessages.js
+- MVC (Model-View-Controller): 0.9844
+- MVVM (Model-View-ViewModel): 0.9374
+- Clean Architecture: 0.7686
+
+Arquivo: anything-llm/server/models/promptHistory.js
+- MVC (Model-View-Controller): 0.8204
+- MVVM (Model-View-ViewModel): 0.6509
+- Clean Architecture: 0.6198
+
+Arquivo: anything-llm/server/models/embedConfig.js
+- MVC (Model-View-Controller): 0.9389
+- MVVM (Model-View-ViewModel): 0.8990
+- Clean Architecture: 0.8499
+
+Arquivo: anything-llm/server/models/cacheData.js
+- MVC (Model-View-Controller): 0.9579
+- MVVM (Model-View-ViewModel): 0.7472
+- Clean Architecture: 0.4236
+
+Arquivo: anything-llm/server/models/workspaceChats.js
+- MVC (Model-View-Controller): 0.8358
+- MVVM (Model-View-ViewModel): 0.7949
+- Clean Architecture: 0.7871
+
+Arquivo: anything-llm/server/models/browserExtensionApiKey.js
+- MVC (Model-View-Controller): 0.9495
+- MVVM (Model-View-ViewModel): 0.6489
+- Clean Architecture: 0.4975
+
+Arquivo: anything-llm/server/models/workspaceThread.js
+- MVC (Model-View-Controller): 0.9692
+- MVVM (Model-View-ViewModel): 0.8467
+- Clean Architecture: 0.8024
+
+Arquivo: anything-llm/server/models/slashCommandsPresets.js
+- MVC (Model-View-Controller): 0.9377
+- MVVM (Model-View-ViewModel): 0.8606
+- Clean Architecture: 0.7142
+
+Arquivo: anything-llm/server/models/workspaceParsedFiles.js
+- MVC (Model-View-Controller): 0.3458
+- MVVM (Model-View-ViewModel): 0.2906
+- Clean Architecture: 0.2120
+
+Arquivo: anything-llm/server/models/workspacesSuggestedMessages.js
+- MVC (Model-View-Controller): 0.9792
+- MVVM (Model-View-ViewModel): 0.8100
+- Clean Architecture: 0.3249
+
+Arquivo: anything-llm/server/models/invite.js
+- MVC (Model-View-Controller): 0.8896
+- MVVM (Model-View-ViewModel): 0.8874
+- Clean Architecture: 0.7433
+
+Arquivo: anything-llm/server/__tests__/models/systemPromptVariables.test.js
+- MVC (Model-View-Controller): 0.7518
+- MVVM (Model-View-ViewModel): 0.7342
+- Clean Architecture: 0.3653
+
+Arquivo: anything-llm/server/__tests__/utils/chats/openaiCompatible.test.js
+- MVC (Model-View-Controller): 0.8971
+- MVVM (Model-View-ViewModel): 0.8126
+- Clean Architecture: 0.3941
+
+Arquivo: anything-llm/server/__tests__/utils/chats/openaiHelpers.test.js
+- MVC (Model-View-Controller): 0.9478
+- MVVM (Model-View-ViewModel): 0.9368
+- Clean Architecture: 0.9334
+
+Arquivo: anything-llm/server/__tests__/utils/agents/defaults.test.js
+- MVC (Model-View-Controller): 0.9347
+- MVVM (Model-View-ViewModel): 0.7917
+- Clean Architecture: 0.4505
+
+Arquivo: anything-llm/server/__tests__/utils/agents/aibitat/providers/helpers/untooled.test.js
+- MVC (Model-View-Controller): 0.9250
+- MVVM (Model-View-ViewModel): 0.8515
+- Clean Architecture: 0.7248
+
+Arquivo: anything-llm/server/__tests__/utils/SQLConnectors/connectionParser.test.js
+- MVC (Model-View-Controller): 0.8856
+- MVVM (Model-View-ViewModel): 0.7496
+- Clean Architecture: 0.6156
+
+Arquivo: anything-llm/server/__tests__/utils/safeJSONStringify/safeJSONStringify.test.js
+- MVC (Model-View-Controller): 0.8697
+- MVVM (Model-View-ViewModel): 0.7583
+- Clean Architecture: 0.4119
+
+Arquivo: anything-llm/server/__tests__/utils/agentFlows/executor.test.js
+- MVC (Model-View-Controller): 0.5759
+- MVVM (Model-View-ViewModel): 0.5640
+- Clean Architecture: 0.4021
+
+Arquivo: anything-llm/server/__tests__/utils/TextSplitter/index.test.js
+- MVC (Model-View-Controller): 0.9792
+- MVVM (Model-View-ViewModel): 0.7656
+- Clean Architecture: 0.5831
+
+Arquivo: anything-llm/server/__tests__/utils/vectorDbProviders/pgvector/index.test.js
+- MVC (Model-View-Controller): 0.8564
+- MVVM (Model-View-ViewModel): 0.6944
+- Clean Architecture: 0.6614
+
+Arquivo: anything-llm/server/__tests__/utils/helpers/convertTo.test.js
+- MVC (Model-View-Controller): 0.9840
+- MVVM (Model-View-ViewModel): 0.6816
+- Clean Architecture: 0.6673
+
+Arquivo: anything-llm/server/jobs/cleanup-orphan-documents.js
+- MVC (Model-View-Controller): 0.9645
+- MVVM (Model-View-ViewModel): 0.8092
+- Clean Architecture: 0.6550
+
+Arquivo: anything-llm/server/jobs/sync-watched-documents.js
+- MVC (Model-View-Controller): 0.9943
+- MVVM (Model-View-ViewModel): 0.9584
+- Clean Architecture: 0.8888
+
+Arquivo: anything-llm/server/jobs/helpers/index.js
+- MVC (Model-View-Controller): 0.9921
+- MVVM (Model-View-ViewModel): 0.9865
+- Clean Architecture: 0.9639
+
+Arquivo: anything-llm/server/utils/prisma/index.js
+- MVC (Model-View-Controller): 0.8303
+- MVVM (Model-View-ViewModel): 0.7360
+- Clean Architecture: 0.2069
+
+Arquivo: anything-llm/server/utils/database/index.js
+- MVC (Model-View-Controller): 0.9341
+- MVVM (Model-View-ViewModel): 0.9097
+- Clean Architecture: 0.5411
+
+Arquivo: anything-llm/server/utils/files/logo.js
+- MVC (Model-View-Controller): 0.9665
+- MVVM (Model-View-ViewModel): 0.9400
+- Clean Architecture: 0.6544
+
+Arquivo: anything-llm/server/utils/files/pfp.js
+- MVC (Model-View-Controller): 0.9950
+- MVVM (Model-View-ViewModel): 0.9899
+- Clean Architecture: 0.9587
+
+Arquivo: anything-llm/server/utils/files/index.js
+- MVC (Model-View-Controller): 0.9795
+- MVVM (Model-View-ViewModel): 0.9448
+- Clean Architecture: 0.9140
+
+Arquivo: anything-llm/server/utils/files/multer.js
+- MVC (Model-View-Controller): 0.7606
+- MVVM (Model-View-ViewModel): 0.6837
+- Clean Architecture: 0.4282
+
+Arquivo: anything-llm/server/utils/files/purgeDocument.js
+- MVC (Model-View-Controller): 0.9831
+- MVVM (Model-View-ViewModel): 0.7725
+- Clean Architecture: 0.4337
+
+Arquivo: anything-llm/server/utils/EncryptionManager/index.js
+- MVC (Model-View-Controller): 0.9690
+- MVVM (Model-View-ViewModel): 0.8247
+- Clean Architecture: 0.7988
+
+Arquivo: anything-llm/server/utils/telemetry/index.js
+- MVC (Model-View-Controller): 0.9841
+- MVVM (Model-View-ViewModel): 0.7537
+- Clean Architecture: 0.2351
+
+Arquivo: anything-llm/server/utils/TextToSpeech/index.js
+- MVC (Model-View-Controller): 0.8488
+- MVVM (Model-View-ViewModel): 0.8196
+- Clean Architecture: 0.6120
+
+Arquivo: anything-llm/server/utils/TextToSpeech/elevenLabs/index.js
+- MVC (Model-View-Controller): 0.9542
+- MVVM (Model-View-ViewModel): 0.8888
+- Clean Architecture: 0.7440
+
+Arquivo: anything-llm/server/utils/TextToSpeech/openAiGeneric/index.js
+- MVC (Model-View-Controller): 0.9796
+- MVVM (Model-View-ViewModel): 0.9727
+- Clean Architecture: 0.9617
+
+Arquivo: anything-llm/server/utils/TextToSpeech/openAi/index.js
+- MVC (Model-View-Controller): 0.9679
+- MVVM (Model-View-ViewModel): 0.8504
+- Clean Architecture: 0.5361
+
+Arquivo: anything-llm/server/utils/chats/stream.js
+- MVC (Model-View-Controller): 0.9922
+- MVVM (Model-View-ViewModel): 0.9159
+- Clean Architecture: 0.8822
+
+Arquivo: anything-llm/server/utils/chats/index.js
+- MVC (Model-View-Controller): 0.9077
+- MVVM (Model-View-ViewModel): 0.7473
+- Clean Architecture: 0.4796
+
+Arquivo: anything-llm/server/utils/chats/embed.js
+- MVC (Model-View-Controller): 0.9545
+- MVVM (Model-View-ViewModel): 0.7326
+- Clean Architecture: 0.3502
+
+Arquivo: anything-llm/server/utils/chats/agents.js
+- MVC (Model-View-Controller): 0.8781
+- MVVM (Model-View-ViewModel): 0.5751
+- Clean Architecture: 0.4805
+
+Arquivo: anything-llm/server/utils/chats/apiChatHandler.js
+- MVC (Model-View-Controller): 0.9121
+- MVVM (Model-View-ViewModel): 0.7857
+- Clean Architecture: 0.4316
+
+Arquivo: anything-llm/server/utils/chats/openaiCompatible.js
+- MVC (Model-View-Controller): 0.9827
+- MVVM (Model-View-ViewModel): 0.9430
+- Clean Architecture: 0.8293
+
+Arquivo: anything-llm/server/utils/chats/commands/reset.js
+- MVC (Model-View-Controller): 0.9781
+- MVVM (Model-View-ViewModel): 0.8326
+- Clean Architecture: 0.6782
+
+Arquivo: anything-llm/server/utils/boot/MetaGenerator.js
+- MVC (Model-View-Controller): 0.6781
+- MVVM (Model-View-ViewModel): 0.4424
+- Clean Architecture: 0.4108
+
+Arquivo: anything-llm/server/utils/boot/index.js
+- MVC (Model-View-Controller): 0.9851
+- MVVM (Model-View-ViewModel): 0.9650
+- Clean Architecture: 0.9139
+
+Arquivo: anything-llm/server/utils/boot/eagerLoadContextWindows.js
+- MVC (Model-View-Controller): 0.9491
+- MVVM (Model-View-ViewModel): 0.6880
+- Clean Architecture: 0.4857
+
+Arquivo: anything-llm/server/utils/EmbeddingEngines/voyageAi/index.js
+- MVC (Model-View-Controller): 0.9935
+- MVVM (Model-View-ViewModel): 0.9686
+- Clean Architecture: 0.7949
+
+Arquivo: anything-llm/server/utils/EmbeddingEngines/ollama/index.js
+- MVC (Model-View-Controller): 0.9290
+- MVVM (Model-View-ViewModel): 0.9120
+- Clean Architecture: 0.7871
+
+Arquivo: anything-llm/server/utils/EmbeddingEngines/azureOpenAi/index.js
+- MVC (Model-View-Controller): 0.9549
+- MVVM (Model-View-ViewModel): 0.9520
+- Clean Architecture: 0.8974
+
+Arquivo: anything-llm/server/utils/EmbeddingEngines/genericOpenAi/index.js
+- MVC (Model-View-Controller): 0.8029
+- MVVM (Model-View-ViewModel): 0.7807
+- Clean Architecture: 0.6695
+
+Arquivo: anything-llm/server/utils/EmbeddingEngines/gemini/index.js
+- MVC (Model-View-Controller): 0.9307
+- MVVM (Model-View-ViewModel): 0.8044
+- Clean Architecture: 0.5931
+
+Arquivo: anything-llm/server/utils/EmbeddingEngines/lmstudio/index.js
+- MVC (Model-View-Controller): 0.9950
+- MVVM (Model-View-ViewModel): 0.9416
+- Clean Architecture: 0.8914
+
+Arquivo: anything-llm/server/utils/EmbeddingEngines/liteLLM/index.js
+- MVC (Model-View-Controller): 0.9150
+- MVVM (Model-View-ViewModel): 0.8643
+- Clean Architecture: 0.8373
+
+Arquivo: anything-llm/server/utils/EmbeddingEngines/localAi/index.js
+- MVC (Model-View-Controller): 0.8809
+- MVVM (Model-View-ViewModel): 0.8787
+- Clean Architecture: 0.8725
+
+Arquivo: anything-llm/server/utils/EmbeddingEngines/openAi/index.js
+- MVC (Model-View-Controller): 0.9657
+- MVVM (Model-View-ViewModel): 0.9597
+- Clean Architecture: 0.9476
+
+Arquivo: anything-llm/server/utils/EmbeddingEngines/mistral/index.js
+- MVC (Model-View-Controller): 0.9644
+- MVVM (Model-View-ViewModel): 0.9234
+- Clean Architecture: 0.6342
+
+Arquivo: anything-llm/server/utils/EmbeddingEngines/cohere/index.js
+- MVC (Model-View-Controller): 0.9671
+- MVVM (Model-View-ViewModel): 0.9560
+- Clean Architecture: 0.9376
+
+Arquivo: anything-llm/server/utils/EmbeddingEngines/native/constants.js
+- MVC (Model-View-Controller): 0.8037
+- MVVM (Model-View-ViewModel): 0.5633
+- Clean Architecture: 0.1640
+
+Arquivo: anything-llm/server/utils/EmbeddingEngines/native/index.js
+- MVC (Model-View-Controller): 0.8577
+- MVVM (Model-View-ViewModel): 0.7919
+- Clean Architecture: 0.5321
+
+Arquivo: anything-llm/server/utils/BackgroundWorkers/index.js
+- MVC (Model-View-Controller): 0.9492
+- MVVM (Model-View-ViewModel): 0.8065
+- Clean Architecture: 0.6368
+
+Arquivo: anything-llm/server/utils/vectorStore/resetAllVectorStores.js
+- MVC (Model-View-Controller): 0.9604
+- MVVM (Model-View-ViewModel): 0.8107
+- Clean Architecture: 0.5222
+
+Arquivo: anything-llm/server/utils/agents/ephemeral.js
+- MVC (Model-View-Controller): 0.7958
+- MVVM (Model-View-ViewModel): 0.5382
+- Clean Architecture: 0.3734
+
+Arquivo: anything-llm/server/utils/agents/index.js
+- MVC (Model-View-Controller): 0.8983
+- MVVM (Model-View-ViewModel): 0.8916
+- Clean Architecture: 0.8892
+
+Arquivo: anything-llm/server/utils/agents/defaults.js
+- MVC (Model-View-Controller): 0.9540
+- MVVM (Model-View-ViewModel): 0.7034
+- Clean Architecture: 0.6183
+
+Arquivo: anything-llm/server/utils/agents/imported.js
+- MVC (Model-View-Controller): 0.6199
+- MVVM (Model-View-ViewModel): 0.5767
+- Clean Architecture: 0.4199
