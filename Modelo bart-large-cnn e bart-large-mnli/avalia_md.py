@@ -85,6 +85,14 @@ for raiz, _, arquivos in os.walk(CAMINHO_REPO):
                 conteudo = f.read()
 
             conteudo_limpo = limpar_markdown(conteudo)
+
+
+            # Salvar entrada original limpa em TXT
+            with open("entradas_processadas.txt", "a", encoding="utf-8") as entrada_saida:
+                entrada_saida.write(f"\n\n===== {caminho} =====\n")
+                entrada_saida.write(conteudo_limpo)
+                entrada_saida.write("\n")
+
             if not conteudo_limpo.strip():
                 print("⚪ Ignorado (sem conteúdo relevante)")
                 continue
