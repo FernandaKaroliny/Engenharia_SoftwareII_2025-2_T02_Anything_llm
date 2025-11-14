@@ -2,6 +2,10 @@
 
 Análise de padrões arquiteturais usando os modelos facebook/bart-large-cnn e facebook/bart-large-mnli
 
+## Dependências
+
+`pip install transformers torch sentencepiece accelerate`
+
 ## Repositório AnythingLLM
 
 - `https://github.com/Mintplex-Labs/anything-llm` - Repositório analisado
