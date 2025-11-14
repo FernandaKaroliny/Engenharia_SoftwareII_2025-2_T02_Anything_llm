@@ -74,8 +74,10 @@ resultados = []
 
 tempo_execucao = time.perf_counter()
 
-for raiz, _, arquivos in os.walk(CAMINHO_REPO):
+for raiz, dirs, arquivos in os.walk(CAMINHO_REPO):
 
+    dirs[:] = [d for d in dirs if d.lower() != "locales"]
+    
     for nome_arquivo in arquivos:
         if nome_arquivo.endswith(".md"):
             caminho = os.path.join(raiz, nome_arquivo)
@@ -126,7 +128,7 @@ for raiz, _, arquivos in os.walk(CAMINHO_REPO):
                     print(f"🔹 {nome_arquivo}: {padrao_predito} ({confianca:.1%})")
 
                     resultados.append({
-                        "arquivo": nome_arquivo,
+                        "arquivo": caminho, #nome_arquivo,
                         "resumo": resumo_final.strip(),
                         "padrao_arquitetural": padrao_predito,
                         "confianca": round(confianca, 3)
