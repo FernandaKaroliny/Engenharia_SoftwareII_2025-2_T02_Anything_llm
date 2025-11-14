@@ -1,0 +1,302 @@
+
+
+      anything-llm/
+    CONTRIBUTING.md
+    .prettierrc
+    .hadolint.yaml
+    .gitignore
+    .prettierignore
+    README.md
+    .nvmrc
+    .gitattributes
+    pull_request_template.md
+    .gitmodules
+    ... (+7 arquivos)
+    server/
+        .gitignore
+        .nvmrc
+        .env.example
+        jsconfig.json
+        nodemon.json
+        .flowconfig
+        index.js
+        yarn.lock
+        package.json
+        utils/
+            collectorApi/
+            prisma/
+            agentFlows/
+            comKey/
+            chats/
+            MCP/
+            telemetry/
+            EmbeddingEngines/
+            helpers/
+            agents/
+            PasswordRecovery/
+            TextToSpeech/
+            EncryptionManager/
+            vectorDbProviders/
+            BackgroundWorkers/
+            database/
+            logger/
+            files/
+            DocumentManager/
+            AiProviders/
+            vectorStore/
+            middleware/
+            TextSplitter/
+            EmbeddingRerankers/
+            http/
+            boot/
+        prisma/
+            schema.prisma
+            seed.js
+            migrations/
+        models/
+            systemSettings.js
+            welcomeMessages.js
+            systemPromptVariables.js
+            vectors.js
+            eventLogs.js
+            communityHub.js
+            promptHistory.js
+            workspaceChats.js
+            documentSyncQueue.js
+            documents.js
+            ... (+19 arquivos)
+        jobs/
+            sync-watched-documents.js
+            cleanup-orphan-documents.js
+            helpers/
+        endpoints/
+            embedManagement.js
+            utils.js
+            communityHub.js
+            mcpServers.js
+            agentWebsocket.js
+            document.js
+            chat.js
+            agentFlows.js
+            workspaceThreads.js
+            browserExtension.js
+            ... (+5 arquivos)
+            extensions/
+            experimental/
+            embed/
+            mobile/
+            api/
+        __tests__/
+            utils/
+            models/
+        storage/
+            README.md
+            models/
+            documents/
+        swagger/
+            utils.js
+            index.css
+            init.js
+            index.js
+            dark-swagger.css
+            openapi.json
+        middleware/
+            httpLogger.js
+    collector/
+        .gitignore
+        .nvmrc
+        .env.example
+        nodemon.json
+        index.js
+        yarn.lock
+        package.json
+        utils/
+            constants.js
+            tokenizer/
+            url/
+            EncryptionWorker/
+            comKey/
+            downloadURIToFile/
+            WhisperProviders/
+            logger/
+            runtimeSettings/
+            files/
+            extensions/
+            OCRLoader/
+            http/
+        hotdir/
+            __HOTDIR__.md
+        processRawText/
+            index.js
+        processSingleFile/
+            index.js
+            convert/
+        processLink/
+            index.js
+            helpers/
+            convert/
+        __tests__/
+            utils/
+        storage/
+            .gitignore
+            tmp/
+        extensions/
+            index.js
+            resync/
+        middleware/
+            setDataSigner.js
+            httpLogger.js
+            verifyIntegrity.js
+    docker/
+        docker-compose.yml
+        Dockerfile
+        .env.example
+        HOW_TO_USE_DOCKER.md
+        docker-entrypoint.sh
+        docker-healthcheck.sh
+        vex/
+            CVE-2024-29415.vex.json
+            CVE-2024-37890.vex.json
+            CVE-2019-10790.vex.json
+            CVE-2024-4068.vex.json
+    locales/
+        README.fa-IR.md
+        README.zh-CN.md
+        README.tr-TR.md
+        README.ja-JP.md
+    extras/
+        support/
+            announcements/
+        scripts/
+            verifyPackageVersions.mjs
+    browser-extension/
+    images/
+        choices.png
+        youtube.png
+        wordmark.png
+        gcp-project-bar.png
+        promo.png
+        screenshots/
+            cf_outputs.png
+            upload.png
+            create_stack.png
+        deployBtns/
+            docker.png
+            aws.png
+        LLMproviders/
+            localai-setup.png
+            localai-embedding.png
+    cloud-deployments/
+        digitalocean/
+            terraform/
+        k8/
+            manifest.yaml
+        huggingface-spaces/
+            Dockerfile
+        helm/
+            charts/
+        gcp/
+            deployment/
+        aws/
+            cloudformation/
+    .vscode/
+        launch.json
+        settings.json
+        tasks.json
+    embed/
+    .devcontainer/
+        README.md
+        devcontainer.json
+    frontend/
+        .gitignore
+        .nvmrc
+        .env.example
+        vite.config.js
+        index.html
+        jsconfig.json
+        postcss.config.js
+        yarn.lock
+        tailwind.config.js
+        package.json
+        src/
+            index.css
+            LogoContext.jsx
+            App.jsx
+            i18n.js
+            PfpContext.jsx
+            ThemeContext.jsx
+            AuthContext.jsx
+            main.jsx
+            utils/
+            models/
+            media/
+            locales/
+            components/
+            pages/
+            hooks/
+        public/
+            robots.txt
+            anything-llm-light.png
+            anything-llm-dark.png
+            favicon.png
+            favicon.ico
+            fonts/
+            embed/
+        scripts/
+            postbuild.js
+
+--- CONTEÚDO DO README (RAIZ DO PROJETO) ---
+<a name="readme-top"></a>
+<p align="center">
+  <a href="https://anythingllm.com"><img src="https://github.com/Mintplex-Labs/anything-llm/blob/master/images/wordmark.png?raw=true" alt="AnythingLLM logo"></a>
+</p>
+<div align='center'>
+<a href="https://trendshift.io/repositories/2415" target="_blank"><img src="https://trendshift.io/api/badge/repositories/2415" alt="Mintplex-Labs%2Fanything-llm | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
+</div>
+<p align="center">
+    <b>AnythingLLM:</b> The all-in-one AI app you were looking for.<br />
+    Chat with your docs, use AI Agents, hyper-configurable, multi-user, & no frustrating setup required.
+</p>
+<p align="center">
+  <a href="https://discord.gg/6UyHPeGZAC" target="_blank">
+      <img src="https://img.shields.io/badge/chat-mintplex_labs-blue.svg?style=flat&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAH1UExURQAAAP////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////r6+ubn5+7u7/3+/v39/enq6urq6/v7+97f39rb26eoqT1BQ0pOT4+Rkuzs7cnKykZKS0NHSHl8fdzd3ejo6UxPUUBDRdzc3RwgIh8jJSAkJm5xcvHx8aanqB4iJFBTVezt7V5hYlJVVuLj43p9fiImKCMnKZKUlaaoqSElJ21wcfT09O3u7uvr6zE0Nr6/wCUpK5qcnf7+/nh7fEdKTHx+f0tPUOTl5aipqiouMGtubz5CRDQ4OsTGxufn515hY7a3uH1/gXBydIOFhlVYWvX29qaoqCQoKs7Pz/Pz87/AwUtOUNfY2dHR0mhrbOvr7E5RUy8zNXR2d/f39+Xl5UZJSx0hIzQ3Odra2/z8/GlsbaGjpERHSezs7L/BwScrLTQ4Odna2zM3Obm7u3x/gKSmp9jZ2T1AQu/v71pdXkVISr2+vygsLiInKTg7PaOlpisvMcXGxzk8PldaXPLy8u7u7rm6u7S1tsDBwvj4+MPExbe4ueXm5s/Q0Kyf7ewAAAAodFJOUwAABClsrNjx/QM2l9/7lhmI6jTB/kA1GgKJN+nea6vy/MLZQYeVKK3rVA5tAAAAAWJLR0QB/wIt3gAAAAd0SU1FB+cKBAAmMZBHjXIAAAISSURBVDjLY2CAAkYmZhZWNnYODnY2VhZmJkYGVMDIycXNw6sBBbw8fFycyEoYGfkFBDVQgKAAPyMjQl5IWEQDDYgIC8FUMDKKsmlgAWyiEBWMjGJY5YEqxMAqGMWFNXAAYXGgAkYJSQ2cQFKCkYFRShq3AmkpRgYJbghbU0tbB0Tr6ukbgGhDI10gySfBwCwDUWBsYmpmDqQtLK2sbTQ0bO3sHYA8GWY
+... (conteúdo truncado para economizar memória)...
+
+
+      Com base nas dependências, scripts e estrutura, descreva:
+      1. Quais tecnologias principais o projeto utiliza (ex: Node.js, React, Express, Prisma, etc.).
+      2. Qual o tipo de arquitetura que o projeto segue (ex: Monolítico, MVC, Microservices, Event-Driven, Client-Server, etc.).
+      3. Quais diretórios ou pacotes indicam separação de responsabilidades (ex: 'server', 'frontend', 'collector').
+      4. Como ocorre o fluxo de execução em desenvolvimento (baseando-se nos scripts `dev:*` e `setup`).
+      5. Se o projeto parece voltado para execução local, em nuvem, ou ambos.
+      6. Quais boas práticas ou convenções de arquitetura são evidentes (ex: uso de Prisma para ORM, divisão entre back e front, uso de Docker, etc.).
+      7. Gere um pequeno resumo final explicando o propósito geral do projeto e seu padrão arquitetural principal.
+
+      Responda em português de forma clara OBJETIVA, não repetitiva além de Avaliar a confiabilidade da sua resposta.
+      
+
+
+---
+
+### Tecnologias Principais utilizadas:
+
+1. **Node.js**: O núcleo do sistema, usado para executar os scripts e funções do backend.
+2. **Express**: Uma biblioteca para criar aplicativos web e APIs RESTful.
+3. **Prisma**: Um ORM (Object-Relational Mapping) para trabalhar com bancos de dados relacionais.
+4. **React**: Para criar a interface do usuário (UI), usando componentes reutilizáveis.
+5. **Tailwind CSS**: Para estilização avançada e responsividade.
+6. **PostgreSQL**: O banco de dados principal para armazenamento de dados.
+7. **MongoDB**: Usado como uma fonte de dados adicional para armazenamento de documentos.
+8. **Redis**: Um cache para melhorar a performance.
+9. **Docker**: Para automatizar a criação e implantação de containers.
+10. **AWS Lambda**: Para hospedar funções lambda na AWS.
+11. **Azure Functions**: Para hospedar funções Azure Function na Azure.
+12. **Google Cloud Functions**: Para hospedar funções Google Cloud Function na Google Cloud.
+13. **Heroku**: Para hospedar aplicativos Web na Heroku.
+14. **Netlify**: Para hospedar aplicativos Web na Netlify.
+15. **GitHub Actions**: Para automatizar tarefas de build e testes.
+16. **CI/CD**: Utilizado para automatizar o ciclo de vida do software.
+
+### Tipo de Arquitetura:
+
+O projeto segue uma arquitetura monolítica, onde todas as funcionalidades estão

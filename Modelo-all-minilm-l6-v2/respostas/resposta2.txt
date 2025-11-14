@@ -1,0 +1,38 @@
+# Padrões Arquiteturais Identificados
+
+## Data Pipeline
+Probabilidade média: 25.5%
+Fontes: entrada2.txt
+
+## Event-Driven
+Probabilidade média: 24.7%
+Fontes: entrada2.txt
+
+## LLM Integration Pattern
+Probabilidade média: 24.6%
+Fontes: entrada2.txt
+
+## Plugin Architecture
+Probabilidade média: 20.2%
+Fontes: entrada2.txt
+
+## Component-Based
+Probabilidade média: 19.0%
+Fontes: entrada2.txt
+
+## Service-Oriented
+Probabilidade média: 18.0%
+Fontes: entrada2.txt
+
+## Real-time Communication
+Probabilidade média: 17.7%
+Fontes: entrada2.txt
+
+## Client-Server
+Probabilidade média: 17.2%
+Fontes: entrada2.txt
+
+## Microservices
+Probabilidade média: 15.4%
+Fontes: entrada2.txt
+

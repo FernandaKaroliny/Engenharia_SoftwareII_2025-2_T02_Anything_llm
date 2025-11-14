@@ -1,0 +1,22 @@
+# Padrões Arquiteturais Identificados
+
+## Data Pipeline
+Probabilidade média: 27.5%
+Fontes: entrada1.txt
+
+## Microservices
+Probabilidade média: 21.3%
+Fontes: entrada1.txt
+
+## Repository Pattern
+Probabilidade média: 17.2%
+Fontes: entrada1.txt
+
+## Vector Database Architecture
+Probabilidade média: 15.8%
+Fontes: entrada1.txt
+
+## Layered Architecture
+Probabilidade média: 15.6%
+Fontes: entrada1.txt
+

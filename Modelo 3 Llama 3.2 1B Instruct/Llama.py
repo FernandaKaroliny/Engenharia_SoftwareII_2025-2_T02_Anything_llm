@@ -37,6 +37,8 @@ def executarModelo(input_text):
    return decoded  # Extrai apenas a resposta gerada
 
 # Caminho do modelo
+#model_path = "Qwen/Qwen2.5-Coder-1.5B-Instruct"
+#model_path = ""  # Modelo no huggingface
 model_path = r"F:\Windows 3.0\Downloads\Teste 1\Llama-3.2-1B-Instruct"  
 # Utilizei um modelo baixado localmente, altere caso o modelo 
 # esteja em outro diretorio ou no huggingface
@@ -63,8 +65,8 @@ model = AutoModelForCausalLM.from_pretrained(
 mostrar_uso_memoria()
 
 
-for i in range(1, 4):
-   with open(f"entradas/entrada{i}.txt", "r", encoding="utf-8") as f:
+for i in range(1, 5):
+   with open(f"../entradas/entrada{i}.txt", "r", encoding="utf-8") as f:
       arquivo = f.read()
 
       prompt = f"""
@@ -82,7 +84,7 @@ for i in range(1, 4):
 
       Responda em português de forma clara OBJETIVA, não repetitiva além de Avaliar a confiabilidade da sua resposta.
       """
-
+      prompt2 = ''
       print(prompt)
 
       os.makedirs("respostas", exist_ok=True)

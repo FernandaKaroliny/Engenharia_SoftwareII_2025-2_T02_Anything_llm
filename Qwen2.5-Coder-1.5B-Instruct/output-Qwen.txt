@@ -1,0 +1,32 @@
+TEMPO DE EXECUCAO=24.766483065000102
+1. **Camadas** - O projeto está organizado em camadas, onde as funcionalidades são divididas entre diferentes diretórios. Por exemplo, `server` contém a lógica back-end, enquanto `collector` contém a lógica front-end. Isso facilita a manutenção e escalabilidade do sistema.
+
+2. **Pipe-and-Filters** - O projeto usa pipes e filtros para organizar e manipular dados. Por exemplo, o arquivo `utils/collectorApi/index.js` define um pipe para processar dados da API, enquanto o arquivo `utils/collector/processRawText/index.js` define um filtro para processar texto raw.
+
+3. **Client-Server** - O projeto é cliente-servidor, onde o cliente (front-end) envia solicitações ao servidor (back-end). Isso permite a comunicação entre diferentes partes do sistema e a escalabilidade.
+
+4. **Peer-to-Peer** - O projeto não utiliza peer-to-peer para compartilhar dados ou recursos. No entanto, o uso de serviços como Docker e Kubernetes pode ser considerado um tipo de peer-to-peer na forma de hospedagem de aplicativos.
+
+5. **Microservices** - O projeto é composto por vários microserviços, cada um com sua própria responsabilidade. Isso permite a modularização e escalabilidade do sistema.
+
+---
+
+Palpite 1: Camadas - 50%
+
+Justificação: O projeto está organizado em camadas, onde as funcionalidades são divididas entre diferentes diretórios. Isso facilita a manutenção e escalabilidade do sistema.
+
+Palpite 2: Pipe-and-Filters - 50%
+
+Justificação: O projeto usa pipes e filtros para organizar e manipular dados. Por exemplo, o arquivo `utils/collectorApi/index.js` define um pipe para processar dados da API, enquanto o arquivo `utils/collector/processRawText/index.js` define um filtro para processar texto raw.
+
+Palpite 3: Client-Server - 50%
+
+Justificação: O projeto é cliente-servidor, onde o cliente (front-end) envia solicitações ao servidor (back-end). Isso permite a comunicação entre diferentes partes do sistema e a escalabilidade.
+
+Palpite 4: Peer-to-Peer - 25%
+
+Justificação: O projeto não utiliza peer-to-peer para compartilhar dados ou recursos. No entanto, o uso de serviços como Docker e Kubernetes pode ser considerado um tipo de peer-to-peer na forma de hospedagem de aplicativos.
+
+Palpite 5: Microservices - 25%
+
+Justificação: O projeto é composto por vários microserviços, cada um com sua própria responsabilidade. Isso permite a modularização e escalabilidade do sistema.

@@ -1,6 +1,4 @@
-
-
-      # Arquivos Selecionados para Análise
+# Arquivos Selecionados para Análise
 
 ## Commits Analisados
 Total: 100 commits
@@ -142,47 +140,3 @@ Total: 33 arquivos
 31. cloud-deployments/aws/cloudformation/DEPLOY.md
 32. cloud-deployments/digitalocean/terraform/DEPLOY.md
 33. docker/HOW_TO_USE_DOCKER.md
-
-
-      Com base nas dependências, scripts e estrutura, descreva:
-      1. Quais tecnologias principais o projeto utiliza (ex: Node.js, React, Express, Prisma, etc.).
-      2. Qual o tipo de arquitetura que o projeto segue (ex: Monolítico, MVC, Microservices, Event-Driven, Client-Server, etc.).
-      3. Quais diretórios ou pacotes indicam separação de responsabilidades (ex: 'server', 'frontend', 'collector').
-      4. Como ocorre o fluxo de execução em desenvolvimento (baseando-se nos scripts `dev:*` e `setup`).
-      5. Se o projeto parece voltado para execução local, em nuvem, ou ambos.
-      6. Quais boas práticas ou convenções de arquitetura são evidentes (ex: uso de Prisma para ORM, divisão entre back e front, uso de Docker, etc.).
-      7. Gere um pequeno resumo final explicando o propósito geral do projeto e seu padrão arquitetural principal.
-
-      Responda em português de forma clara OBJETIVA, não repetitiva além de Avaliar a confiabilidade da sua resposta.
-      
-
-
-### Resposta:
-
-#### 1. Tecnologias Principais utilizadas:
-
-O projeto utiliza uma variedade de tecnologias para garantir a funcionalidade e escalabilidade. Aqui estão algumas das principais:
-
-- **Node.js**: Para a criação de APIs e aplicativos web.
-- **Express**: Para criar rotas e manipular requisições HTTP.
-- **Prisma**: Para gerenciar a base de dados usando TypeScript.
-- **React**: Para a construção da interface do usuário.
-- **Docker**: Para automatizar a instalação e execução dos serviços.
-- **PostgreSQL**: Para armazenar os dados.
-- **MongoDB**: Para armazenar documentos.
-- **OpenAI**: Para implementar inteligência artificial.
-- **GPT-4**: Para fornecer respostas ao usuário.
-- **AWS**: Para hospedar o serviço na nuvem.
-- **Azure**: Para hospedar o serviço na nuvem.
-- **Google Cloud**: Para hospedar o serviço na nuvem.
-- **Heroku**: Para hospedar o serviço no ambiente de desenvolvimento.
-
-#### 2. Tipo de Arquitetura:
-
-O projeto segue uma arquitetura monolítica, onde todas as camadas do sistema estão integradas em um único servidor. Isso permite uma maior facilidade de manutenção e teste, mas também pode tornar o sistema mais complexo e difícil de expandir.
-
-#### 3. Separação de Responsabilidades:
-
-O projeto divide suas responsabilidades em vários diretórios e pacotes:
-
-- **server**: Contém as rotas, manipulação de requisições e integração com
