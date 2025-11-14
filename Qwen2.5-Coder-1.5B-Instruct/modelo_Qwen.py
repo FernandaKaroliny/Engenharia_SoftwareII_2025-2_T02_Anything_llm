@@ -9,14 +9,14 @@ Original file is located at
 Instalação e importação de módulos
 """
 
-!pip install -q transformers torch accelerate
+#!pip install -q transformers torch accelerate
 
 import os
 import torch
 import time
 from transformers import AutoTokenizer, AutoModelForCausalLM
-from IPython.display import clear_output
-from google.colab import drive
+#from IPython.display import clear_output
+#from google.colab import drive
 
 """Antes de prosseguir, verificar se está com a GPU habilitada. A inferência demora demais se estiver usando apenas CPU."""
 
@@ -113,7 +113,7 @@ def inferir_arquitetura_pela_tree(tree_text, prompt):
 
 """Clonando repositório objeto da análise"""
 
-!git clone https://github.com/Mintplex-Labs/anything-llm.git
+#!git clone https://github.com/Mintplex-Labs/anything-llm.git
 
 """Definição do prompt (en/pt)"""
 
@@ -158,29 +158,40 @@ print(f"Estrutura capturada (primeiras 10 linhas):\n{'\n'.join(tree_visual.split
 
 print("Aguardando análise do modelo...")
 
-start = time.perf_counter()
-resultado = inferir_arquitetura_pela_tree(tree_visual, prompt.format(tree_visual, readmes_content))
-end = time.perf_counter()
+# Caminho absoluto onde o script está
+base_dir = os.path.dirname(os.path.abspath(__file__))
 
-tempo_execucao = end-start
+# Pastas finais
+entradas_dir = os.path.join(base_dir, "entradas")
+respostas_dir = os.path.join(base_dir, "respostas")
 
-clear_output(wait=True)
+# Garantir que existem
+os.makedirs(entradas_dir, exist_ok=True)
+os.makedirs(respostas_dir, exist_ok=True)
 
-print("Análise gerada:\n")
-print(f"Tempo de execução = {tempo_execucao}s\n")
-print(resultado)
+for a in range(1, 5):
+    start = time.perf_counter()
+    
+    resultado = inferir_arquitetura_pela_tree(
+        tree_visual,
+        prompt.format(tree_visual, readmes_content)
+    )
+    
+    end = time.perf_counter()
+    tempo_execucao = end - start
 
-"""Salvar entradas e saídas do Drive"""
+    # Caminhos corretos para os arquivos
+    input_path = os.path.join(entradas_dir, f"entrada{a}.txt")
+    output_path = os.path.join(respostas_dir, f"resposta{a}.txt")
 
-drive.mount('/content/drive')
+    # Salvar entrada
+    with open(input_path, 'w', encoding='utf-8') as f:
+        f.write(tree_visual)
+        f.write(readmes_content)
 
-input_path = '/content/drive/MyDrive/Qwen-analysis/input-Qwen.txt'
-output_path = '/content/drive/MyDrive/Qwen-analysis/output-Qwen.txt'
+    # Salvar resposta
+    with open(output_path, 'w', encoding='utf-8') as f:
+        f.write(f"TEMPO_DE_EXECUCAO={tempo_execucao}\n")
+        f.write(resultado)
 
-with open(input_path, 'w') as f:
-    f.write(tree_visual)
-    f.write(readmes_content)
-
-with open(output_path, 'w') as f:
-    f.write(f"TEMPO DE EXECUCAO={tempo_execucao}\n")
-    f.write(resultado)
+    print(f"🟢 Salvo: {output_path}")

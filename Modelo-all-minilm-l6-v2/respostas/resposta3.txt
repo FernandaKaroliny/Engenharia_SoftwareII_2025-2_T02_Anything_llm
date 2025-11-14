@@ -1,0 +1,10 @@
+# Padrões Arquiteturais Identificados
+
+## Data Pipeline
+Probabilidade média: 18.2%
+Fontes: entrada3.txt
+
+## LLM Integration Pattern
+Probabilidade média: 15.9%
+Fontes: entrada3.txt
+

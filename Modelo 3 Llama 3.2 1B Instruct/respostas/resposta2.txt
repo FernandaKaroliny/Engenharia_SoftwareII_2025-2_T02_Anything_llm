@@ -16,9 +16,9 @@ Analise o seguinte arquivo package.json:
   },
   "scripts": {
     "test": "jest",
-    "lint": "cd server && yarn lint && cd../frontend && yarn lint && cd../collector && yarn lint",
-    "setup": "cd server && yarn && cd../collector && yarn && cd../frontend && yarn && cd.. && yarn setup:envs && yarn prisma:setup && echo \"Please run yarn dev:server, yarn dev:collector, and yarn dev:frontend in separate terminal tabs.\"",
-    "setup:envs": "cp -n./frontend/.env.example./frontend/.env && cp -n./server/.env.example./server/.env.development && cp -n./collector/.env.example./collector/.env && cp -n./docker/.env.example./docker/.env && echo \"All ENV files copied!\n\"",
+    "lint": "cd server && yarn lint && cd ../frontend && yarn lint && cd ../collector && yarn lint",
+    "setup": "cd server && yarn && cd ../collector && yarn && cd ../frontend && yarn && cd .. && yarn setup:envs && yarn prisma:setup && echo \"Please run yarn dev:server, yarn dev:collector, and yarn dev:frontend in separate terminal tabs.\"",
+    "setup:envs": "cp -n ./frontend/.env.example ./frontend/.env && cp -n ./server/.env.example ./server/.env.development && cp -n ./collector/.env.example ./collector/.env && cp -n ./docker/.env.example ./docker/.env && echo \"All ENV files copied!\n\"",
     "dev:server": "cd server && yarn dev",
     "dev:collector": "cd collector && yarn dev",
     "dev:frontend": "cd frontend && yarn dev",
@@ -33,7 +33,7 @@ Analise o seguinte arquivo package.json:
     "generate:cloudformation": "node cloud-deployments/aws/cloudformation/generate.mjs",
     "generate::gcp_deployment": "node cloud-deployments/gcp/deployment/generate.mjs",
     "verify:translations": "cd frontend/src/locales && node verifyTranslations.mjs",
-    "normalize:translations": "cd frontend/src/locales && node normalizeEn.mjs && cd../../.. && yarn lint && yarn verify:translations"
+    "normalize:translations": "cd frontend/src/locales && node normalizeEn.mjs && cd ../../.. && yarn lint && yarn verify:translations"
   },
   "private": false,
   "devDependencies": {
@@ -45,7 +45,7 @@ Analise o seguinte arquivo package.json:
       Com base nas dependências, scripts e estrutura, descreva:
       1. Quais tecnologias principais o projeto utiliza (ex: Node.js, React, Express, Prisma, etc.).
       2. Qual o tipo de arquitetura que o projeto segue (ex: Monolítico, MVC, Microservices, Event-Driven, Client-Server, etc.).
-      3. Quais diretórios ou pacotes indicam separação de responsabilidades (ex:'server', 'frontend', 'collector').
+      3. Quais diretórios ou pacotes indicam separação de responsabilidades (ex: 'server', 'frontend', 'collector').
       4. Como ocorre o fluxo de execução em desenvolvimento (baseando-se nos scripts `dev:*` e `setup`).
       5. Se o projeto parece voltado para execução local, em nuvem, ou ambos.
       6. Quais boas práticas ou convenções de arquitetura são evidentes (ex: uso de Prisma para ORM, divisão entre back e front, uso de Docker, etc.).
@@ -54,13 +54,30 @@ Analise o seguinte arquivo package.json:
       Responda em português de forma clara OBJETIVA, não repetitiva além de Avaliar a confiabilidade da sua resposta.
       
 
-  Resposta:
-  1. O projeto utiliza Node.js, Express, Prisma, Jest e Concurrently.
-  2. O projeto segue uma arquitetura Monolítica, com divisão entre back-end, front-end e collector.
-  3. O diretório'server' e 'collector' indicam separação de responsabilidades.
-  4. O fluxo de execução em desenvolvimento ocorre através dos scripts `dev:*` e `setup`.
-  5. O projeto parece voltar para execução local, em nuvem, ou ambos.
-  6. O projeto utiliza Prisma para ORM, divisão entre back-end e front-end, uso de Docker, e é um exemplo de arquitetura Monolítica.
-  7. O propósito geral do projeto é criar um chatbot de off-the-shelf usando off-the-shelf tools e AI technologies.
 
-  Resposta avaliada como 10/10.
+### Resposta:
+
+#### 1. Tecnologias Principais utilizadas:
+
+- **Node.js**: O projeto é escrito em JavaScript, sendo executado pelo interpretador Node.js.
+- **Express**: Um framework web para Node.js usado para criar APIs.
+- **Prisma**: Uma biblioteca de ORM (Object-Relational Mapping) para Node.js que simplifica a interação com bancos de dados.
+- **React**: Para a construção da interface do usuário (UI), mas o projeto também usa outras tecnologias como CSS e HTML.
+- **Docker**: Para automatizar a criação e execução de containers.
+- **Jest**: Para testes unitários.
+
+#### 2. Arquitetura Seguida:
+
+O projeto segue uma arquitetura monolítica, onde todas as funcionalidades estão dentro de um único servidor. Isso permite uma maior facilidade na manutenção e escalabilidade do sistema.
+
+#### 3. Diretórios e Pacotes:
+
+- **'server'**: Contém os arquivos relacionados ao backend, incluindo rotas, controllers, e serviços.
+- **'frontend'**: Contém os arquivos relacionados à interface do usuário, incluindo componentes React e estilos CSS.
+- **'collector'**: Contém os arquivos relacionados ao coletor de dados, incluindo rotas, controllers, e serviços.
+- **'storage'**: Contém os arquivos de armazenamento, como o banco de dados.
+
+#### 4. Fluxo de Execução em Desenvolvimento:
+
+- **Scripts `dev:*`**:
+  - `dev:server`: Inicia o servidor backend
