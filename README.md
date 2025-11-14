@@ -20,3 +20,8 @@ Este repositório destina-se a conter os dados necessários para a análise de p
 ## 🔗 Repositório Original
 - **[AnythingLLM](https://github.com/Mintplex-Labs/anything-llm)** - Repositório analisado no projeto
 
+- Utiliza-se os modelos 
+- bart-large-cnn
+- Llama-3.2-1B-Instruct
+- Qwen2.5-Coder-1.5B-Instruct
+- all-MiniLM-L6-v2
