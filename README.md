@@ -61,6 +61,8 @@ Com o ambiente virtual ativado:
 
 ```bash
 pip install -q transformers torch accelerate
+pip install torch torchvision torchaudio --index-url 
+pip install transformers accelerate tokenizers sentencepiece bitsandbytes huggingface-hub safetensors
 ```
 
 ---
