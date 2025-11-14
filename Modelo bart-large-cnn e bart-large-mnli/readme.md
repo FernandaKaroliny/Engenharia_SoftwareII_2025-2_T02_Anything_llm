@@ -4,7 +4,7 @@ Análise de padrões arquiteturais usando os modelos facebook/bart-large-cnn e f
 
 # Dependências
 
-pip install transformers torch sentencepiece accelerate
+`pip install transformers torch sentencepiece accelerate`
 
 ## Repositório AnythingLLM
 
