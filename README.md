@@ -18,9 +18,9 @@ Este repositório contém a implementação completa da Atividade 1 de Engenhari
 A equipe desenvolveu um pipeline automatizado capaz de:
 - Baixar e analisar um repositório alvo;
 - Processar seu conteúdo (código-fonte, documentação e estrutura);
-- Executar **3+ modelos Hugging Face** para identificar padrões arquiteturais;
+- Executar **5 modelos do Hugging Face** para identificar padrões arquiteturais;
 - Comparar a eficácia dos modelos;
-- Gerar resultados reproducíveis em JSON/CSV.
+- Gerar resultados em txt.
 
 ---
 ## ▶️ Vídeo Da apresentação da equipe:
