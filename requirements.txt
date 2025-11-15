@@ -9,3 +9,7 @@ sentencepiece
 bitsandbytes
 huggingface-hub
 safetensors
+
+GitPython
+tqdm
+scikit-learn
