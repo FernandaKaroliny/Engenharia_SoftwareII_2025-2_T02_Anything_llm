@@ -12,6 +12,7 @@ Abaixo está a tabela detalhada de contribuição dos integrantes:
 | **João Vinícius De Almeida Argolo**    | 202200025573 | Pesquisa, teste de modelos, elaboração do tutorial e edição do documento.                                   |
 | **José Arthur Calixto Da Rocha Costa** | 202300038770 | Pesquisa, teste de modelos, elaboração do tutorial e edição do documento.                                   |
 | **Vinícius Azevedo Peroba**            | 201900076892 | Pesquisa, análise do projeto, apuração dos testes, edição do documento.                                     |
+| **Wendel Alexsander Gomes Menezes**    | 202300027740 | Pesquisa, análise do projeto, apuração dos testes, edição do documento.                                     |
 
 Este repositório contém a implementação completa da Atividade 1 de Engenharia de Software II (2025.2), cujo objetivo é **analisar padrões arquiteturais ao longo da evolução de um projeto real do GitHub utilizando modelos de linguagem (LLMs)**.
 
@@ -153,13 +154,16 @@ docs/tutorial.pdf
 ```
 Ele contém:
 - Introdução
+- Fundamentação Teórica
 - Metodologia
-- Análise dos modelos
+- Resultados e Análise
+- Resultados por Modelo
+- Tutorial Individual por modelo
 - Discussão dos padrões identificados
 - Conclusões
 
 
-| **Wendel Alexsander Gomes Menezes**    | 202300027740 | Pesquisa, análise do projeto, apuração dos testes, edição do documento.                                     |
+
 ---
 
 
