@@ -46,6 +46,11 @@ O projeto foi escolhido por apresentar:
 
 ## 📌 3. Estrutura do Repositório
 ```
+├── Data/ # Scripts dos modelos utilizados no Colab
+│   ├── Modelo_bart_large_cnn_e_bart_large_mnli.ipynb
+│   ├── bart_karge_mnli.ipynb
+│   └── modelo_Qwen.ipynb
+│
 ├── entradas/            # Arquivos de entrada utilizados pela equipe
 │
 ├── src/                 # Código-fonte principal
