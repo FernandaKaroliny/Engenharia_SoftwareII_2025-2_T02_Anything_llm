@@ -32,9 +32,11 @@ O projeto foi escolhido por apresentar:
 │   └── RunModels.py     # Execução central dos modelos
 │
 ├── resultados/          # Resultados gerados pelos modelos
-│   ├── modelos.csv
-│   ├── padroes.json
-│   └── logs/
+│   ├── BART_CNN+MNLI.txt
+│   ├── Bart_MNLI.txt
+│   ├── Llama.txt
+│   ├── Qwen.txt
+│   └── all_minilm_l6_v2.txt
 │
 ├── docs/                # Documentação do projeto
 │   └── tutorial.pdf
@@ -110,20 +112,17 @@ Este script realiza:
 2. Extração de arquivos relevantes;
 3. Processamento e limpeza;
 4. Execução dos modelos Hugging Face;
-5. Salvamento dos resultados em `results/`.
+5. Salvamento dos resultados em `Resultados/`.
 
 ---
 
 ## 📌 6. Resultados
-Os resultados são gerados automaticamente:
-- `results/padroes.json` → Lista de padrões arquiteturais detectados
-- `results/modelos.csv` → Comparação dos modelos
-- `results/logs/` → Execuções detalhadas
+Os resultados são gerados automaticamente após a escolha do modelo:
+- `resultados` → Lista de padrões arquiteturais detectados
 
 Além disso, o PDF do tutorial contém uma análise aprofundada, incluindo:
 - Comportamento dos modelos
 - Vantagens e limitações
-- Impacto da arquitetura do Anything-LLM
 
 ---
 
