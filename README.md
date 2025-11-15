@@ -42,8 +42,7 @@ O projeto foi escolhido por apresentar:
 ├── requirements.txt     # Dependências do projeto
 └── README.md            # Este documento
 
----
-
+```
 ## 📌 3. Modelos Utilizados
 O estudo utilizou **cinco modelos** do Hugging Face para ampliar a diversidade de análise:
 
@@ -61,8 +60,6 @@ Cada modelo recebeu como entrada fragmentos do projeto alvo e produziu como saí
 - Relações arquiteturais
 
 Os Resultados estão disponíveis em `resultados`.
-
----
 
 ## 📌 4. Requisitos do Sistema
 ### ✔️ Dependências
@@ -87,7 +84,7 @@ Este projeto foi executado com os seguintes recursos:
 - RAM: **32 GB**
 - Ambiente Python 3.12
 
-> A infraestrutura é importante pois modelos maiores podem estourar a memória em máquinas mais modestas.
+> A infraestrutura é importante pois modelos maiores podem estourar a memória
 
 ---
 
@@ -142,13 +139,7 @@ Ele contém:
 - Discussão dos padrões identificados
 - Conclusões
 
-
-## 📌 8. Licença
-Uso educacional para a disciplina de **Engenharia de Software II – UFPB**.
-
----
-
-## 📌 9. Equipe
+## 📌 8. Equipe
 baixo está a tabela detalhada de contribuição dos integrantes:
 
 | Nome                                   | Matrícula    | Contribuição                                                                                                |
