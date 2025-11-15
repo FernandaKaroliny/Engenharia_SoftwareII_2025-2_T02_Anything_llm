@@ -23,6 +23,10 @@ A equipe desenvolveu um pipeline automatizado capaz de:
 - Gerar resultados reproducíveis em JSON/CSV.
 
 ---
+## ▶️ Vídeo Da apresentação da equipe:
+- https://drive.google.com/drive/u/3/folders/1k_cFVe-c416gxxkyP5GDc-b5KLNITyY1
+
+
 
 ## 📌 2. Projeto Analisado
 
